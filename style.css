@@ -188,6 +188,7 @@
         background-color: transparent;
     } */
 }
+<<<<<<< HEAD
 @media screen and (max-width: 375px){
     *{
         background: #F3F5FC;
@@ -356,3 +357,5 @@
         margin-block-end: 0em;
     }
 }
+=======
+>>>>>>> 767cba570014ef8ccc4a4a24d8cfce44597c2e86
