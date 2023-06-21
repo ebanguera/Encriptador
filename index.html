@@ -1,0 +1,55 @@
+<!DOCTYPE html5>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Encriptador de texto</title>
+        <link rel="icon" href="./Imagenes/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <script src="./script.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="./Imagenes/logo.png" alt="logo de alura">
+        </header>
+        <main>
+            <div class="content">
+                <section class="Entrada">
+                    <textarea class="texto" cols="40" rows="10" placeholder="Ingrese el texto aqui" ></textarea>
+                    <div class="mensajeadv">
+                        <p class="adv"><img src="./Imagenes/advertencia.png" aling="right">Solo letras minusculas y sin acento</p>
+                    </div>
+                    <div class="botones">
+                        <button class="encriptar" onclick="btnencriptar()">Encriptar</button>
+                        <button class="desencriptar" onclick="btndesencriptar()">Desencriptar</button>
+                    </div>
+                    
+                </section>
+
+                <section class="textomensaje" id="textomensaje">
+                    <textarea class="areaencriptado" id="areaencriptado" cols="20" rows="11"></textarea>
+                    <!-- <img class="muñeco" id="muñeco" src="./Imagenes/Muñeco.png"> -->
+                    <p class="linea1" id="linea1"><strong>Ningún mensaje fue encontrado<br></strong> Ingresa el texto que desees encriptar o desencriptar</p>
+                    <div class="botoncopiar">
+                        <button class="copiar" onclick="btncopiar()">Copiar</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!-- <footer>
+            <p class="texto_copy">&copy; 2023 Edinson Banguera</p>
+            <section class="iconos">
+                <a href="https://github.com/ebanguera" target="_blank" class="ff"><img class="logogit" src="./Imagenes/logogit.png"></a>
+                <a href="https://www.linkedin.com/in/ebanguera/" target="_blank" class="ff"><img class="logolinkedin" src="./Imagenes/logolinkedin.png"></a>
+            </section>
+            
+        </footer> -->
+    </body>
+</html>
+
