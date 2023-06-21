@@ -55,7 +55,7 @@
     .areaencriptado{
         color:#0A3871;
         background: transparent;
-        font-family: 'Oleo Script', cursive;
+        /* font-family: 'Oleo Script', cursive; */
         border: none;
         background-image:url(./Imagenes/Muñeco.png);
         background-repeat: no-repeat;
