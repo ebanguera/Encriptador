@@ -2,7 +2,8 @@ const textArea = document.querySelector(".texto");
 const mensaje = document.querySelector(".areaencriptado");
 const mensajeen =document.querySelector(".textomensaje")
 const imgBuscando = document.getElementById("muñeco");
-const msgNoHayTexto = document.querySelector(".linea1");
+const msgNoHayTexto = document.querySelector(".msg");
+const aparece =document.querySelector(".botoncopiar")
 
 /*La letra "e" es convertida para "enter"
 La letra "i" es convertida para "imes"
@@ -21,15 +22,17 @@ function encriptarf(stringEncriptado){
     } 
     return stringEncriptado
 }
+aparece.style.visibility="hidden"
 
 function btnencriptar(){
     const textoEncriptado = encriptarf(textArea.value)
     mensaje.value = textoEncriptado;
     textArea.value = "";
     mensaje.style.background = "none";
-    // msgNoHayTexto.hidden = true;
-    msgNoHayTexto.style.visibility = "hidden";  
+    msgNoHayTexto.hidden = true;
+    // msgNoHayTexto.style.visibility= "hidden";  
     mensaje.value = textoEncriptado;
+    aparece.style.visibility = "visible";
 }
 
 function desencriptar(stringDesencriptado){

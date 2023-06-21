@@ -21,7 +21,7 @@
         <main>
             <div class="content">
                 <section class="Entrada">
-                    <textarea class="texto" cols="40" rows="10" placeholder="Ingrese el texto aqui" ></textarea>
+                    <textarea class="texto" placeholder="Ingrese el texto aqui" ></textarea>
                     <div class="mensajeadv">
                         <p class="adv"><img src="./Imagenes/advertencia.png" aling="right">Solo letras minusculas y sin acento</p>
                     </div>
@@ -32,14 +32,17 @@
                     
                 </section>
 
-                <section class="textomensaje" id="textomensaje">
-                    <textarea class="areaencriptado" id="areaencriptado" cols="20" rows="11"></textarea>
+                <div class="textomensaje" id="textomensaje">
+                    <!-- <textarea class="areaencriptado" id="areaencriptado" cols="20" rows="11"></textarea> -->
                     <!-- <img class="muñeco" id="muñeco" src="./Imagenes/Muñeco.png"> -->
-                    <p class="linea1" id="linea1"><strong>Ningún mensaje fue encontrado<br></strong> Ingresa el texto que desees encriptar o desencriptar</p>
+                    <div class="msg">
+                        <p class="linea1" id="linea1"><strong>Ningún mensaje fue encontrado<br></strong> Ingresa el texto que desees encriptar o desencriptar</p>
+                    </div>
                     <div class="botoncopiar">
+                        <textarea class="areaencriptado" id="areaencriptado" cols="20" rows="11"></textarea>
                         <button class="copiar" onclick="btncopiar()">Copiar</button>
                     </div>
-                </section>
+                </div>
             </div>
         </main>
         <!-- <footer>
