@@ -179,7 +179,7 @@
         margin-left: 10px;
         ;
     }
-    .texto_copy {
+    .texto_copy { 
         margin: auto;
         font-size: 20px;
         align-items: center;
@@ -272,11 +272,10 @@
         gap: 20px;
         width:359px;
         height: 80px;
-        
-
     }
     .linea1{
         font-size: 15px;
+        background-color: transparent;
     }
     .linea1 strong{
         font-weight: bolder;
