@@ -29,8 +29,8 @@ function btnencriptar(){
     mensaje.value = textoEncriptado;
     textArea.value = "";
     mensaje.style.background = "none";
-    msgNoHayTexto.hidden = true;
-    // msgNoHayTexto.style.visibility= "hidden";  
+    // msgNoHayTexto.hidden = true;
+    msgNoHayTexto.style.visibility= "hidden";  
     mensaje.value = textoEncriptado;
     aparece.style.visibility = "visible";
 }

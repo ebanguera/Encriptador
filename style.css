@@ -31,6 +31,8 @@
         margin-top: 20px;
         text-transform: lowercase;
         resize:none;
+        height:12.6em;
+        width:23em;
     }
     .texto::placeholder{
         color: #0A3871;
@@ -39,7 +41,8 @@
         outline: none;
     }
     .textomensaje{
-        display: block;
+        display: flex;
+        flex-direction: column;
         background: #FFFFFF;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         border-radius: 24px;
@@ -47,6 +50,7 @@
         height: 580px;
         color:#0A3871;
         font-family: 'Oleo Script', cursive;
+        align-items: center;
     }
     .areaencriptado{
         color:#0A3871;
@@ -56,11 +60,25 @@
         background-image:url(./Imagenes/Muñeco.png);
         background-repeat: no-repeat;
         background-position: center;
-        height:73%;
+        padding: 10px;
+        /* height:73%; */
         resize: none;
+        position:relative;
     }
     .areaencriptado:focus{
         outline: none;
+    }
+    .areaencriptado::-webkit-scrollbar {
+        width: 12px;
+    }
+    .areaencriptado::-webkit-scrollbar-thumb {
+        background-color: gainsboro;
+        border-radius: 20px;
+        /* border: 3px solid orange; */
+    }
+    .image{
+        background-color: transparent;
+        height: 73%;
     }
     .linea1{
         color:#0A3871;
@@ -81,7 +99,6 @@
         padding: 0px;
         gap: 24px;
         position: absolute;
-        background-color: transparent;
     }
     .encriptar{
         width: 328px;
@@ -104,14 +121,13 @@
         cursor: pointer;
     }
     .botoncopiar{
-        display: flex;
-        
-        flex-direction: row;
+        /* display: flex;
+        flex-direction: column; */
         align-items: flex-start;
         padding: 0px;
         gap: 24px;
-        background: #FFFFFF;
-        position: absolute;
+        background: transparent;
+        /* position: relative; */
     }
     .copiar{
         box-sizing: border-box;
@@ -120,13 +136,21 @@
         border: 1px solid #0A3871;
         color: #0A3871;
         border-radius: 24px;
-        margin-left: 30px;
+        margin-left: 7px;
         cursor: pointer;
-        position:absolute;
+        /* position:relative; */
     }
     .mensajeadv{
         margin-top: 15px;
         margin-bottom: 15px;
+    }
+    .msg{
+        text-align: center;
+        justify-content: center;
+        background: transparent;
+        position: relative;
+        width:359px;
+        height: 80px;
     }
     .adv{
         color: #495057;
@@ -137,7 +161,7 @@
         margin-block-end: 0em;
     }
 }
-/* @media only screen and (max-width: 375px){
+@media only screen and (max-width: 375px){
     *{
         background: #F3F5FC;
         font-family: 'Inter';
@@ -182,7 +206,7 @@
         outline: none;
     }
     .textomensaje{
-        
+        background-color: #FFFFFF;
         color:#0A3871;
         font-family: 'Oleo Script', cursive;
         position:relative;
@@ -199,22 +223,24 @@
         outline: none;
     }
     .msg{
-
-        text-align: center;
-        justify-content: center;
+        /* text-align: center;
+        justify-content: center; */
         background: white;
-        
-        position:absolute;
+        position: absolute;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         border-radius: 20px; 
         padding: 0px;
         gap: 20px;
         width:359px;
         height: 80px;
+        align-items: center;
+        justify-content: center;
     }
     .linea1{
         font-size: 15px;
         background-color: transparent;
+        position: absolute;
+        align-items: center;
     }
     .linea1 strong{
         font-weight: bolder;
@@ -253,7 +279,6 @@
     }
     .botoncopiar{
         display: flex;
-        
         flex-direction: column;
         align-items: flex-start;
         padding: 10px;
@@ -267,6 +292,7 @@
         font-size: 15px;
         color:#0A3871;
         font-family: 'Oleo Script', cursive;
+        align-items: center;
         
     }
     .copiar{
@@ -292,4 +318,4 @@
         margin-block-start: 0em;
         margin-block-end: 0em;
     }
-} */
+}
