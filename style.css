@@ -176,7 +176,7 @@
     .logo{
         padding-top: 10px;
         margin-left: 10px;
-        width: 2%;
+        width: 5%;
     }
     main{
         display: flex;
@@ -196,8 +196,8 @@
         margin-top: 20px;
         text-transform: lowercase;
         resize:none;
-        height: 10em;
-        width: 359px;
+        box-sizing: content-box;
+        width: 100%;
     }
     .texto::placeholder{
         color: #0A3871;
@@ -206,26 +206,40 @@
         outline: none;
     }
     .textomensaje{
-        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        background: transparent;
         color:#0A3871;
         font-family: 'Oleo Script', cursive;
         position:relative;
         margin-top:30px;
+        /* height: 580px; */
+        width: 100%;
+        align-items: center;
     }
     .areaencriptado{
         color:#0A3871;
-        background: transparent;
+        background-color: transparent;
         font-family: 'Oleo Script', cursive;
         border: none;
-
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 24px;
+        height: 580px; 
+        /* background: white; */
+        position: relative;
     }
     .areaencriptado:focus{
         outline: none;
     }
+    .image{
+        /* background-color: transparent; */
+        background: white;
+        border-radius: 20px; 
+    }
     .msg{
         /* text-align: center;
         justify-content: center; */
-        background: white;
+        background: #FFFFFF;
         position: absolute;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         border-radius: 20px; 
@@ -233,13 +247,14 @@
         gap: 20px;
         width:359px;
         height: 80px;
-        align-items: center;
+        text-align: center;
         justify-content: center;
+        align-items: center;
     }
     .linea1{
         font-size: 15px;
         background-color: transparent;
-        position: absolute;
+        position: relative;
         align-items: center;
     }
     .linea1 strong{
@@ -247,6 +262,7 @@
         font-size: 1.6em;
         background: transparent;
     }
+    
     .botones{
         display: flex;
         margin-top: 10px;
@@ -278,22 +294,22 @@
         cursor: pointer;
     }
     .botoncopiar{
-        display: flex;
+        /* display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-start; 
         padding: 10px;
         gap: 24px;
         background: #FFFFFF;
         position: absolute;
-        background: #FFFFFF;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         border-radius: 24px; 
         width: 339px;
         font-size: 15px;
         color:#0A3871;
         font-family: 'Oleo Script', cursive;
-        align-items: center;
-        height: 580px;
+        align-items: center; */
+        position:relative;
+        width: 339px;
     }
     .copiar{
         box-sizing: border-box;
@@ -304,7 +320,7 @@
         border-radius: 24px;
         margin-left: 5px;
         cursor: pointer;
-        position:relative;
+        position:absolute;
     }
     .mensajeadv{
         margin-top: 15px;

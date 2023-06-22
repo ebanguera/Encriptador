@@ -1,7 +1,7 @@
 const textArea = document.querySelector(".texto");
 const mensaje = document.querySelector(".areaencriptado");
 const mensajeen =document.querySelector(".textomensaje")
-const imgBuscando = document.getElementById("muñeco");
+const imgBuscando = document.querySelector(".image");
 const msgNoHayTexto = document.querySelector(".msg");
 const aparece =document.querySelector(".botoncopiar")
 
@@ -33,7 +33,10 @@ function btnencriptar(){
     msgNoHayTexto.style.visibility= "hidden";  
     mensaje.value = textoEncriptado;
     aparece.style.visibility = "visible";
+    imgBuscando.hidden=false;
 }
+if (screen.width <= 450)
+    imgBuscando.hidden=true;
 
 function desencriptar(stringDesencriptado){
     let matrizcodigo =[["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
