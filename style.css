@@ -16,13 +16,15 @@ body {
 }
 main {
   display: flex;
-  /* margin-left: 40px; */
-  justify-content: space-around;
+  
 }
 .content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: stretch;
+  width:100vw;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .Entrada {
   display: block;
