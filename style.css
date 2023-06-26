@@ -223,14 +223,14 @@
     width: 100%;
     align-items: center;
   }
-  .areaencriptado {
+  .image {
     color: #0a3871;
-    background-color: transparent;
+    /* background-color: transparent; */
     font-family: "Oleo Script", cursive;
     border: none;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 24px;
-    /* background: white; */
+    background: white;
     position: relative;
     height: 560px;
     padding: 10px;
@@ -238,11 +238,12 @@
   .areaencriptado:focus {
     outline: none;
   }
-  .image {
+  .areaencriptado {
     /* background-color: transparent; */
-    background: white;
+    /* background: white; */
     border-radius: 24px;
     position: relative;
+    border: none;
   }
   .msg {
     /* text-align: center;
@@ -318,6 +319,7 @@
         align-items: center; */
     position: relative;
     width: 339px;
+    margin-top: 10px;
   }
   .copiar {
     box-sizing: border-box;
